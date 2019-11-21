@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo.ico">
+    <style>
+    .logo {
+      width:85px;   
+    }
+    #more{
+      display:none;
+    }
+    </style>
+
+  </head>
+    
+  <body class="ml-5 mr-5">
+    <div class="container-fluid"> 
+      <div class="row">
+        <div class="col-1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynSx9d-v8sfTz1oZgws6kY6P6ZYQhk4tN6Ecr19HKUvtrKzgX" class="logo" >
+        </div>
+      
+        <div class="col">
+          <h1 class="pt-3">TGIF</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- menu desplegable-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <!-- Boton Home-->
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- Boton Congress Desplegable-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Congress 113
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="house-starter-page.html">House</a>
+              <a class="dropdown-item" href="senate-data6.html">Senate</a>
+            </div>
+          </li>
+          <!-- Boton 3 Attendance Despplegable-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Attendance
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Attendence-House.html">House</a>
+              <a class="dropdown-item" href="Attendence-senate.html">Senate</a>
+            </div>
+          </li>
+          <!-- Boton 4 Party loyalty Desplegable-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Party Loyalty
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="PartyLoyalty-house.html">House</a>
+              <a class="dropdown-item" href="PartyLoyalty-senate.html">Senate</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>    
+    <br>
+
+    <!--info-->
+    <h2 class="ml-2">Senators</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p>
+
+      
+      
+    <span>Filter by:
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="chkRepublican" value="R" onclick=chkClick(); checked>
+        <label class="form-check-label" for="inlineCheckbox1">Republican</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="chkDemocrat" value="D" onclick=chkClick(); checked>
+        <label class="form-check-label" for="inlineCheckbox2">Democrat</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="chkIndependent" value="I" onclick=chkClick(); checked>
+        <label class="form-check-label" for="inlineCheckbox3">Independent</label>
+      </div>
+
+      
+      <div class="float-right" >
+        Filter by state:
+        <select id="cboState" class="filter" onclick=chkClick();> 
+          <option value="ALL">All</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">Distrito de Columbia</option> 
+          <option value="FL">Florencia</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option> 
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option> 
+          <option value="KY">Kentucky</option> 
+          <option value="LA">Louisiaba</option> 
+          <option value="ME">Maine</option> 
+          <option value="MD">Maryland</option> 
+          <option value="MA">Massachusetts</option>          
+          <option value="MI">Michigan</option> 
+          <option value="MN">Minnesota</option> 
+          <option value="MS">Misisipi</option> 
+          <option value="MO">Missouri</option> 
+          <option value="MT">Montana</option> 
+          <option value="NE">Nebraska</option> 
+          <option value="NV">Nevada</option> 
+          <option value="NH">New Hampshire</option> 
+          <option value="NJ">New Jersey</option> 
+          <option value="NM"> New Mexico</option> 
+          <option value="NY">New York</option> 
+          <option value="NC">North California</option> 
+          <option value="ND">North Dakota</option> 
+          <option value="OH">Oklahoma</option> 
+          <option value="OR">Oregon</option> 
+          <option value="PA">Pennsylvania</option> 
+          <option value="RI">Rhode Island</option> 
+          <option value="SC">South Carolifornia</option> 
+          <option value="SD">South Dakota</option> 
+          <option value="TN">Tennessee</option> 
+          <option value="TX">Texas</option> 
+          <option value="UT">Utah</option> 
+          <option value="VT">Vermont</option> 
+          <option value="VA">Virginia</option> 
+          <option value="WV">West Virginia</option> 
+          <option value="WI">Wisconsin</option> 
+          <option value="WY">Wyoming</option> 
+        </select>
+      </div> 
+    </span>
+    <br>
+    <br>
+
+    <table id = "senate-data"  class="table"> </table>
+    <br><br>
+    <footer>
+      <div class= "bg-light text-center">© 2016 TGIF | All Rights Reserved</div>
+    </footer>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src = "./members.js"> </script>
+
+  
+
+  <script>
+
+    grdData(members.results[0].members);
+
+    function grdData(members){
+      var table_content = "<tr><th>Full Name</th><th class='text-center'>Party</th><th class='text-center'>State</th><th class='text-center'>Seniority</th><th class='text-center'>Percentage</th></tr>"
+      var member;
+      var name;
+      for(var i=0; i< members.length; i++){
+        member = members[i];
+        name =  member.first_name + " " + (member.middle_name || "") + " " + member.last_name;
+        table_content+= "<tr>" + 
+                "<td> <a href=" + member.url + ">" + name + "</a></td>" + 
+                "<td class='text-center'>" + member.party + "</td>" + 
+                "<td class='text-center'>" + member.state + "</td>" + 
+                "<td class='text-center'>" + member.seniority + "</td>" +
+                "<td class='text-center'>" + member.votes_with_party_pct + " % </td>" + 
+            "<tr>"
+      }
+      document.getElementById("senate-data").innerHTML = table_content;
+    }
+
+    function chkClick(){
+      var m = members.results[0].members;
+      var memberFilter = [];
+      for (var i=0; i< m.length; i++){
+          
+        if (((document.getElementById("chkIndependent").checked && m[i].party === "I")
+            || (document.getElementById("chkDemocrat").checked && m[i].party === "D")
+            || (document.getElementById("chkRepublican").checked && m[i].party === "R"))
+          && ((document.getElementById("cboState").value === "ALL")
+            ||(document.getElementById("cboState").value === m[i].state))
+          ) {
+
+          memberFilter.push(m[i]);
+        }
+      }
+
+      grdData(memberFilter);
+    }
+
+
+
+    
+  </script>
+</html>
+

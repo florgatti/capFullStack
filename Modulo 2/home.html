@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> TGIF Home </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="shortcut icon" href="logo.ico">
+  <style>
+  .logo {
+    width:85px;  
+  }        
+  .logo2{
+    width: 200px;
+  }
+  #more {display: none;}     
+    </style>
+</head>
+
+<body class="ml-5 mr-5">
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynSx9d-v8sfTz1oZgws6kY6P6ZYQhk4tN6Ecr19HKUvtrKzgX" class="logo" >
+            </div>
+            <div class="col">
+                <h1 class="pt-3">TGIF</h1>
+            </div>
+        </div>
+    </div>
+    <!-- menu desplegable-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- Boton 1 Home-->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Boton 2 Congress Desplegable-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Congress 113
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="house-starter-page.html">House</a>
+            <a class="dropdown-item" href="senate-data6.html">Senate</a>
+          </div>
+        </li>
+        <!-- Boton 3 Attendance Despplegable-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Attendance
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Attendence-House.html">House</a>
+            <a class="dropdown-item" href="Attendence-senate.html">Senate</a>
+          </div>
+        </li>
+        <!-- Boton 4 Party loyalty Desplegable-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Party Loyalty
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="PartyLoyalty-house.html">House</a>
+            <a class="dropdown-item" href="PartyLoyalty-senate.html">Senate</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>    
+  <br>
+<!--info-->
+        
+    
+    
+
+    <div class="container-fluid"> 
+            <div class="row">
+                <div class="col">
+                    <h2 class="ml-2">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta<span id="dots">...</span>
+                      
+                      <span id="more"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+                    <button onclick="myFunction()" id="myBtn">Read more</button>        
+                </div>
+                <div class="col-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynSx9d-v8sfTz1oZgws6kY6P6ZYQhk4tN6Ecr19HKUvtrKzgX" class="logo2" >
+                </div>
+            </div>
+        </div>
+    <!--img src= "logo.png" class=""-->
+         
+    
+    <br><br>
+    <footer>
+        <div class= "bg-light text-center">© 2016 TGIF | All Rights Reserved</div>
+    </footer>
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+
+    <script>
+
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+</html>
